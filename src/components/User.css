@@ -1,0 +1,44 @@
+.hm{
+    height: 100%;
+    width: 100%;
+}
+
+.hm2{
+    height: 50px;
+    width: 100%;
+    background-color: 	#F5F5F5;
+    padding: 1px solid grey;
+}
+.hm2_tag{
+    color:rgb(55, 55, 185);
+    font-size: 18px;
+    padding:10px;
+    font-weight: 400;  
+  
+}
+
+.box1{
+    height:150px;
+    width: 100%;
+    background-color: white;
+}
+
+.box1_input{
+    height: 80px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+}
+.box1_input :hover{
+    border: none;
+    outline: none;
+}
+
+.tab{
+    height:60px;
+    width: 550px;
+    background-color: rgb(241, 232, 232);
+    margin: 40px;
+    border-radius: 30px;
+}
