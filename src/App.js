@@ -9,6 +9,15 @@ import gallary from "../src/image/gallary.png";
 import video from "../src/image/video.png";
 import compose from "../src/image/compose.png";
 import profile from "../src/image/profile.png";
+import orange from "../src/image/Oranges.jpg";
+import grapes from "../src/image/grapes.jpg";
+import Apples from "../src/image/Apples.jpg";
+import coconut from "../src/image/coconut.jpg";
+import Mango from "../src/image/mango.jpg";
+import profilepic from "../src/image/profilepic.jpg";
+import feed_pic from "../src/image/feed_pic.jpg";
+
+
 export default class App extends Component {
   constructor() {
     super();
@@ -26,16 +35,27 @@ export default class App extends Component {
   gifs = [
     {
       title: "apple",
-      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      img: Apples,
+    },
+    {
+      title: "coconut",
+      img: coconut,
+    },
+    {
+      title: "mango",
+      img: Mango,
     },
     {
       title: "grapes",
-      img: "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg",
+      img: grapes,
+    },
+    {
+      title: "grapes",
+      img: grapes,
     },
     {
       title: "orange",
-      img: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80",
-    },
+      img:  orange  },
   ];
 
   buttens = [
@@ -72,7 +92,7 @@ export default class App extends Component {
                   break;
                 }
               }
-            //   this.setState({ searches: this.gifs[0] });
+           
             }}
           />
           {searches != null ? (
@@ -143,7 +163,40 @@ export default class App extends Component {
                 </div>
               ))}
             </div>
+            <div style={{display:"flex",marginTop:"10px"}}><div>
+            <select id="cars" name="cars" className="select_d">
+    <option value="volvo">OnlyMe</option>
+    <option value="saab">Public</option>
+    \
+    <option value="audi">Private</option>
+  </select>
+
+            </div>
+              
+              
+              
+              <div><button className="button_d">Post</button></div>
+            
+           
+            </div>
+            <div className="feed">
+              <div><img src={profilepic} style={{ height: "80px", width: "80px", borderRadius: "50%", margin: "20px" }} /></div>
+              <div style={{ color: "blue", fontSize: "18px", marginTop: "20px", fontWeight: "600" }}><span style={{ color: "blue", fontSize: "18px", marginTop: "20px" }}>John Watson</span>
+              <div  style={{fontSize:"18px",marginTop:"8px",fontWeight:"600"}}><span style={{ color: "rgb(102, 97, 97)", fontSize: "16px", marginTop: "0px" }}>6 April at 21:30</span></div>
+              
+                <div style={{ fontSize: "14px", marginTop: "14px", fontWeight: "600" }}><span style={{ color: "black", fontSize: "16px", marginTop: "0px" }}>
+                This Albums has many things many memory so i share with you guys, My Life alwayas remember these streats
+                
+                </span>
+                  <img src={feed_pic} style={{height:"200px", width:"572px"}}/>
+                </div>
+   
+              </div>
+             
+            </div>
+            
           </div>
+          
         </div>
       </React.StrictMode>
     );
